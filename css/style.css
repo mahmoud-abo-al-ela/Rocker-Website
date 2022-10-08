@@ -24,6 +24,32 @@ a{
     cursor: pointer;
 }
 
+.section-padding{
+    padding: 40px 0;
+}
+
+.section-header{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.section-title{
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.section-header .line{
+    display: block;
+    width: 80px;
+    margin: auto;
+    height: 2px;
+    background-color: var(--brownColor);
+    transition: width .5s;
+}
+
+.section-header:hover .line{
+    width: 100px;
+}
 :root{
     --blcakColor:#333333;
     --brownColor:#7b5244;
@@ -186,4 +212,71 @@ header{
 
 .slider{
     width: 100%;
+}
+
+
+/* category */
+.category-items{
+    display: flex;
+}
+
+.category-item-img{
+    width: 100%;
+    transition: box-shadow .5s;
+}
+
+.category-item{
+    position: relative;
+    
+}
+
+.category-item:hover .category-item-img{
+    box-shadow: 0px 2px 9px 5px #dddddd;
+    cursor: pointer;
+}
+
+.category-item:not(:last-child){
+    margin-right: 30px;
+}
+
+.category-item-subtitle{
+    padding: 20px 0 10px 0;
+    color: gray;
+    font-weight: normal;
+    font-size: small;
+    cursor: pointer;
+}
+
+.category-item-title{
+    font-weight: bold ;
+    color: var(--blcakColor);
+}
+
+.category-item-title:hover{
+    color: var(--brownColor);
+}
+.category-item .icon{
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    display: block;
+    background-color: var(--brownColor);
+    color: var(--whiteColor);
+    line-height: 30px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .5s;
+}
+
+.category-item .icon:hover{
+    background-color: black;
+}
+
+.category-item:hover .icon{
+    visibility: visible;
+    opacity: 1;
+    cursor: pointer;
 }
