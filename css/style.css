@@ -280,3 +280,94 @@ header{
     opacity: 1;
     cursor: pointer;
 }
+
+/* Discount */
+.discount{
+    margin: 50px 0;
+    display: flex;
+}
+
+.description{
+    flex: 2;
+    background-color: #f7f3ef;
+    padding: 20px;
+    position: relative;
+}
+
+.above{
+    position: relative;
+    padding: 10px 20px 30px 70px;
+}
+
+.above i{
+    position: absolute;
+    top: -5px;
+    left: 0px;
+    font-size: 70px;
+    color: var(--brownColor);
+}
+
+.above h3{
+    padding-bottom: 5px;
+}
+
+.above span{
+    color: gray;
+    font-size: small;
+}
+
+.description-info p{
+    line-height: 1.7rem;
+    color: gray;
+    text-align: left;
+    font-size: 13px;
+    letter-spacing: .5px;
+}
+
+.description .bullets{
+    position: absolute;
+    bottom: 25px;
+    right: 40px;
+}
+
+.bullets span{
+    width: 50px;
+    height: 2px;
+    margin-left: 10px;
+    display: inline-block;
+    background-color: var(--brownColor);
+}
+
+.item1, .item2 {
+    flex: 1;
+    height: 300px;
+}
+
+.item1{
+    background-image: url(../images/cms-banner-1.jpg);
+    background-size: cover;
+    margin: 0 20px;
+}
+
+.item2{
+    background-image: url(../images/cms-banner-2.jpg);
+    background-size: cover;
+}
+
+.item1, .item2{
+    cursor: pointer;
+    transition: transform .5s;
+}
+
+.item1:hover, .item2:hover{
+    transform: scale(1.1);
+}
+
+.item1-info, .item2-info{
+    padding: 30px 0 0 15px;
+}
+
+.item1-info h4 , .item2-info h4{
+    color: var(--brownColor);
+    font-weight: normal;
+}
