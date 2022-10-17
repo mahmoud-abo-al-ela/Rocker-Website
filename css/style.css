@@ -458,10 +458,112 @@ hr {
 .list-products{
     display: flex;
     justify-content: center;
+    padding-bottom: 15px;
 }
 
 .list-products li{
     padding: 5px 20px;
     color: var(--brownColor);
     cursor: pointer;
+}
+
+.products-items{
+    display: flex;
+    padding-bottom: 40px;
+}
+
+.products-item{
+    position: relative;
+    flex: 2;
+}
+
+.products-item:hover .products-overlay{
+    transform: scaleX(1);
+}
+
+.products-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scaleX(0);
+    transition: transform .4s;
+}
+
+.list-overlay{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    transform: translate(-50%,-50%);
+}
+
+.list-overlay li{
+    padding: 0 3px;
+}
+
+.list-overlay i{
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    color: var(--whiteColor);
+    background-color: black;
+    transition: all .5s;
+    cursor: pointer;
+}
+
+.list-overlay li:hover i{
+    background-color: var(--brownColor);
+}
+
+.products-items .item-{
+    position: relative;
+}
+.products-items .item- > span{
+    position: absolute;
+    top: 10px;
+    right: 40px;
+    padding: 5px 5px;
+    font-size: 13px;
+    background-color: var(--brownColor);
+    color: var(--whiteColor);
+}
+
+
+.products-overlay > span{
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    padding: 5px 5px;
+    font-size: 13px;
+    background-color: black;
+    color: var(--whiteColor);
+}
+
+.product-info i{
+    margin: 15px 0;
+    color: gray;
+}
+
+.product-info .active{
+    color: #ff8100;
+}
+.product-info h4{
+    margin-bottom: 10px;
+    display: block;
+    font-weight: lighter;
+    color: gray;
+    cursor: pointer;
+}
+
+.products-item:hover h4{
+    color: var(--brownColor);
+}
+.product-info span{
+    font-weight: bold;
+}
+
+.product-info del{
+    padding-left: 5px;
+    color: gray;
 }
